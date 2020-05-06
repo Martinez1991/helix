@@ -8,9 +8,9 @@ def main():
 
     genesis = Block(0, " ", ts, "Genesis block", calculateHash(0, "", ts, "Genesis block", 2, 0), 2, 0)
     bc = Blockchain(genesis)
-    #helix = input("Digite o Ip do Helix: ")
-    helix = subprocess.getoutput("wget -qO- ifconfig.co/ip")
-    print (helix)
+    helix = input("Digite o Ip do Helix: ")
+    #helix = subprocess.getoutput("wget -qO- ifconfig.co/ip")
+    #print (helix)
     while True:
 
         helix1Ent = conectaEntidade(helix, 27017)

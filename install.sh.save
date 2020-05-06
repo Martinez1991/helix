@@ -29,9 +29,17 @@ sudo systemctl start mysql
 wait
 
 #Cria database
+#sudo mysql -e “grant all privileges on *.* to helix@localhost identified by 'pass' with grant option;”
+#sudo mysql -u helix –ppass -e “create database helix;”
+
 sudo mysql -e “grant all privileges on *.* to helix@localhost identified by 'pass' with grant option;”
+
+
+sudo mysql -e "grant all privileges on *.* to helix@localhost identified by 'pass' with grant option;"
+
 SQL1="create database helix;"
 sudo mysql -u helix -ppass -e "$SQL1"
+
 
 sleep 10
 
